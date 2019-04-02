@@ -16,14 +16,17 @@
             android:textSize="25sp"
             android:id="@+id/title"
             android:textStyle="bold"
+            android:layout_marginBottom="10dp"
     />
     <Button
             android:text="@string/conference_tag"
             android:layout_width="100dp"
             android:layout_height="0dp"
-            android:layout_weight="0.15"
+            android:layout_weight="0.1"
             android:id="@+id/tag"
-            android:backgroundTint="@android:color/holo_purple"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"
+            android:layout_marginBottom="10dp"
     />
     <TextView
             android:text="@string/conference_speaker"
@@ -33,6 +36,7 @@
             android:textSize="20sp"
             android:id="@+id/speaker"
             android:textStyle="bold"
+            android:layout_marginBottom="10dp"
     />
     <TextView
             android:text="@string/conference_text"
@@ -46,8 +50,9 @@
             android:text="@string/conference_all"
             android:layout_width="150dp"
             android:layout_height="0dp"
-            android:layout_weight="0.15"
+            android:layout_weight="0.1"
             android:id="@+id/all"
-            android:backgroundTint="@android:color/holo_green_light"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBlue"
     />
 </LinearLayout>
