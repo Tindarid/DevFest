@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">DevFest</string>
     <string name="conference_title">Как мы ускоряем Яндекс под Android</string>
+    <string name="conference_speaker">Артур Василов</string>
+    <string name="conference_tag">Android</string>
+    <string name="conference_all">Все доклады</string>
+    <string name="conference_text">
+        Текст
+    </string>
 </resources>
