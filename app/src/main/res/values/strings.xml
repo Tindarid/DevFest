@@ -1,10 +1,15 @@
 <resources>
-    <string name="app_name">DevFest</string>
-    <string name="conference_title">Как мы ускоряем Яндекс под Android</string>
-    <string name="conference_speaker">Артур Василов</string>
-    <string name="conference_tag">Android</string>
-    <string name="conference_all">Все доклады</string>
-    <string name="conference_text">
-        Текст
+    <string name="app_name" translatable="false">DevFest</string>
+    <string name="conference_title" translatable="false">Как мы ускоряем Яндекс под Android</string>
+    <string name="conference_speaker" translatable="false">Артур Василов</string>
+    <string name="conference_tag" translatable="false">Android</string>
+    <string name="conference_all" translatable="false">Все доклады</string>
+    <string name="conference_text" translatable="false">
+        Многие Android-разработчики знают стандартные методы профилирования приложений,
+        инструменты для отладки и улучшения производительности. Однако для случая больших
+        приложений этого не всегда достаточно. Мы поговорим о нестандартных способах ускорения
+        работы приложения, затронем самые разные аспекты, как вопросы UI, так и инструментов и
+        околосерверных вещей. Я надеюсь, что этот доклад заставит вас посмотреть на вопросы
+        производительности по-новому и подумать о том, что вы можете сделать в своем приложении.
     </string>
 </resources>
