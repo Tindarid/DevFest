@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleText">25sp</dimen>
+    <dimen name="conferenceText">17sp</dimen>
+    <dimen name="speakerText">20sp</dimen>
+    <dimen name="margin">12dp</dimen>
+    <dimen name="marginBottom">10dp</dimen>
+    <dimen name="tagSize">100dp</dimen>
+    <dimen name="allSize">150dp</dimen>
+    <dimen name="linkSize">250dp</dimen>
+</resources>
