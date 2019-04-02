@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DevFest</string>
+    <string name="conference_title">Как мы ускоряем Яндекс под Android</string>
+</resources>
