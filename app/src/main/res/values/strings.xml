@@ -12,4 +12,9 @@
         околосерверных вещей. Я надеюсь, что этот доклад заставит вас посмотреть на вопросы
         производительности по-новому и подумать о том, что вы можете сделать в своем приложении.
     </string>
+    <string-array name="conference_title">
+        <item>Как мы ускоряем Яндекс под Android</item>
+        <item>Kotlin-friendly Annotation Processing</item>
+        <item>D8/R8 vs DX/Proguard</item>
+    </string-array>
 </resources>
