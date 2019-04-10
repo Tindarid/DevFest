@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">DevFest</string>
-    <string name="conference_title" translatable="false">Как мы ускоряем Яндекс под Android</string>
     <string name="conference_speaker" translatable="false">Артур Василов</string>
     <string name="conference_tag" translatable="false">Android</string>
     <string name="conference_all" translatable="false">Все доклады</string>

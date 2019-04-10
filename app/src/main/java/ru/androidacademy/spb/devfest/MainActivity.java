@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startConference();
+                startConference(1);
             }
         });
         button.setText(arr[0]);
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startConference();
+                startConference(2);
             }
         });
         button.setText(arr[1]);
@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startConference();
+                startConference(3);
             }
         });
         button.setText(arr[2]);
     }
 
-    private void startConference() {
-        ConferenceActivity.start(this);
+    private void startConference(int number) {
+        ConferenceActivity.start(this, number);
     }
 
     public static void start(Activity activity) {
