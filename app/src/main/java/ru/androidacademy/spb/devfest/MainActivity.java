@@ -13,33 +13,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         String[] arr = getResources().getStringArray(R.array.conference_title);
-
-        Button button = findViewById(R.id.conference1);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startConference(1);
-            }
-        });
-        button.setText(arr[0]);
-
-        button = findViewById(R.id.conference2);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startConference(2);
-            }
-        });
-        button.setText(arr[1]);
-
-        button = findViewById(R.id.conference3);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startConference(3);
-            }
-        });
-        button.setText(arr[2]);
+        for (int i = 1; i <= 3; ++i) {
+            final int ind = i;
+            int buttonId = getResources().getIdentifier("conference" + i, "id", getPackageName());
+            Button button = findViewById(buttonId);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startConference(ind);
+                }
+            });
+            button.setText(arr[i - 1]);
+        }
     }
 
     private void startConference(int number) {
