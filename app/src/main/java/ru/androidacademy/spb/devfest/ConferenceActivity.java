@@ -23,9 +23,19 @@ public class ConferenceActivity extends AppCompatActivity {
                 startMain();
             }
         });
-        String title = getResources().getStringArray(R.array.conference_title)[number];
-        TextView view = findViewById(R.id.title);
-        view.setText(title);
+
+        setData(number, "title");
+        setData(number, "speaker");
+        setData(number, "text");
+    }
+
+    private void setData(int number, String suffix) {
+        int dataId = getResources().getIdentifier("conference_" + suffix, "array", getPackageName());
+        String data = getResources().getStringArray(dataId)[number];
+        int viewId = getResources().getIdentifier(suffix, "id", getPackageName());
+        TextView view = findViewById(viewId);
+        view.setText(data);
+
     }
 
     private void startMain() {
