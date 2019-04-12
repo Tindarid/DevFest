@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SpeakerActivity extends AppCompatActivity {
@@ -24,7 +24,10 @@ public class SpeakerActivity extends AppCompatActivity {
             }
         });
 
-        //setData(number, "speaker", "image");
+        int viewId = getResources().getIdentifier("avatar", "id", getPackageName());
+        ImageView image = findViewById(viewId);
+        int dataId = getResources().getIdentifier("speaker" + number, "drawable", getPackageName());
+        image.setImageResource(dataId);
         setData(number, "conference_speaker", "name");
         setData(number, "speaker_work", "work");
         setData(number, "speaker_country", "country");

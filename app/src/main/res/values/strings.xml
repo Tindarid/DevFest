@@ -49,8 +49,17 @@
         <item>Moscow, Russia</item>
     </string-array>
     <string-array name="speaker_description">
-        <item>Android Developer with over five years of professional experience and love of creating extremely high-quality apps with perfect UI / UX and optimizations. Working at Yandex. GDG Leader.</item>
-        <item>Currently Sergey is an independent Android Engineer and Consultant with the background in backend dev. Co-organiser of the first Kotlin User Group in Russia and Android Academy in St. Petersburg and Moscow, usually speaks about Kotlin and Android. Kotlin early adopter, digital nomad.</item>
+        <item>
+            Android Developer with over five years of professional experience
+            and love of creating extremely high-quality apps with perfect UI / UX
+            and optimizations. Working at Yandex. GDG Leader.
+        </item>
+        <item>
+            Currently Sergey is an independent Android Engineer and Consultant
+            with the background in backend dev. Co-organiser of the first Kotlin
+            User Group in Russia and Android Academy in St. Petersburg and Moscow,
+            usually speaks about Kotlin and Android. Kotlin early adopter, digital nomad.
+        </item>
         <item>Пишу код, смотрю в Android.</item>
     </string-array>
 </resources>
