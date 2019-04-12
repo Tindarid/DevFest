@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".ConferenceActivity">
         </activity>
+        <activity android:name=".SpeakerActivity">
+        </activity>
     </application>
 
 </manifest>

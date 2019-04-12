@@ -13,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         String[] arr = getResources().getStringArray(R.array.conference_title);
-        for (int i = 1; i <= 3; ++i) {
+        for (int i = 0; i < 3; ++i) {
             final int ind = i;
-            int buttonId = getResources().getIdentifier("conference" + i, "id", getPackageName());
+            int buttonId = getResources().getIdentifier("conference" + (i + 1), "id", getPackageName());
             Button button = findViewById(buttonId);
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                     startConference(ind);
                 }
             });
-            button.setText(arr[i - 1]);
+            button.setText(arr[i]);
         }
     }
 
