@@ -32,15 +32,15 @@ public class ConferenceActivity extends AppCompatActivity {
             }
         });
 
-        setData(number, "title");
-        setData(number, "speaker");
-        setData(number, "text");
+        setData(number, "conference_title", "title");
+        setData(number, "conference_speaker", "speaker");
+        setData(number, "conference_text", "text");
     }
 
-    private void setData(int number, String suffix) {
-        int dataId = getResources().getIdentifier("conference_" + suffix, "array", getPackageName());
+    private void setData(int number, String value, String place) {
+        int dataId = getResources().getIdentifier(value, "array", getPackageName());
         String data = getResources().getStringArray(dataId)[number];
-        int viewId = getResources().getIdentifier(suffix, "id", getPackageName());
+        int viewId = getResources().getIdentifier(place, "id", getPackageName());
         TextView view = findViewById(viewId);
         view.setText(data);
     }

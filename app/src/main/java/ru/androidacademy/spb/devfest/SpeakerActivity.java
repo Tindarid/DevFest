@@ -16,25 +16,26 @@ public class SpeakerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speaker);
         final int number = getIntent().getIntExtra(NUMBER, 0);
-        Button button = findViewById(R.id.conference);
-        button.setOnClickListener(new View.OnClickListener() {
+        TextView view = findViewById(R.id.conference);
+        view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startConference(number);
             }
         });
 
-        //setData(number, "image");
-        //setData(number, "name");
-        //setData(number, "work");
-        //setData(number, "country");
-        //setData(number, "description");
+        //setData(number, "speaker", "image");
+        setData(number, "conference_speaker", "name");
+        setData(number, "speaker_work", "work");
+        setData(number, "speaker_country", "country");
+        setData(number, "speaker_description", "description");
+        setData(number, "conference_title", "conference");
     }
 
-    private void setData(int number, String suffix) {
-        int dataId = getResources().getIdentifier("speaker_" + suffix, "array", getPackageName());
+    private void setData(int number, String value, String place) {
+        int dataId = getResources().getIdentifier(value, "array", getPackageName());
         String data = getResources().getStringArray(dataId)[number];
-        int viewId = getResources().getIdentifier(suffix, "id", getPackageName());
+        int viewId = getResources().getIdentifier(place, "id", getPackageName());
         TextView view = findViewById(viewId);
         view.setText(data);
     }
