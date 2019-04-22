@@ -20,7 +20,7 @@ public class SpeakerActivity extends AppCompatActivity {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startConference(number);
+                finish();
             }
         });
 

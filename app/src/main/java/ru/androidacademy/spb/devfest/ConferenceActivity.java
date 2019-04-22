@@ -20,7 +20,7 @@ public class ConferenceActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startMain();
+                finish();
             }
         });
 
